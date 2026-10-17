@@ -4,6 +4,7 @@ import { useLang } from "../lang.jsx";
 import { projectsMeta } from "../content.js";
 import { Head } from "./Sections.jsx";
 import Icon from "./Icon.jsx";
+import "../dialog.css";
 
 const isVideo = (s) => /\.(mp4|webm|mov|ogg)$/i.test(s);
 const mediaOf = (m) => [m.video, ...(m.gallery || [])].filter(Boolean);
@@ -232,7 +233,7 @@ export function Projects() {
         {projectsMeta.map((m) => {
           const it = p.items[m.id];
           const extra = m.stack.length - MAX_BADGES;
-          const open = () => setOpenId(m.id);
+          const open = () =>setOpenId(m.id);
           return (
             <article className="pcard" key={m.id}>
               <button type="button" className="pcard-open" onClick={open} aria-label={`${ui.details} : ${it.title}`}>
