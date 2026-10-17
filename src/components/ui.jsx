@@ -2,7 +2,6 @@ import { motion, useReducedMotion } from "framer-motion";
 import { isPlaceholder } from "../content.js";
 import Icon from "./Icon.jsx";
 
-// Le seul mouvement récurrent du site : un texte qui monte depuis un masque.
 export function Rise({ children, delay = 0, className = "" }) {
   const reduce = useReducedMotion();
   if (reduce) return <span className={`rise-plain ${className}`}>{children}</span>;
@@ -21,12 +20,10 @@ export function Rise({ children, delay = 0, className = "" }) {
   );
 }
 
-// Texte à compléter : affiché en pointillés pour être repéré facilement.
 export function Ph({ children }) {
   return isPlaceholder(children) ? <span className="ph">{children}</span> : <>{children}</>;
 }
 
-// Lien externe ; désactivé tant que l'adresse est vide ou contient [crochets].
 export function ExtLink({ href, icon, label, missing, className = "btn-text" }) {
   if (!href || isPlaceholder(href)) {
     return (

@@ -57,7 +57,7 @@ export const projectsMeta = [
 ];
 export const i18n = {
   fr: {
-    meta: { title: "Aina Natolotra, développeur web et logiciel" },
+    meta: { title: "Aina Natolotra, développeur web et mobile" },
     skip: "Aller au contenu",
     nav: [
       { id: "accueil", label: "Accueil" },
@@ -72,9 +72,9 @@ export const i18n = {
     },
     hero: {
       status: "Ouvert aux opportunités",
-      role: "Développeur web & logiciel",
+      role: "Développeur web & mobile",
       intro:
-        "Étudiant en Génie Logiciel à l'ESP Antsirabe, je m'intéresse à la conception d'applications web, mobiles et logicielles. J'aime transformer des idées en solutions pratiques, apprendre de nouvelles technologies et développer des projets répondant à des besoins réels.",
+        "Étudiant en génie logiciel à l'ESP Antsirabe, je m'intéresse à la conception d'applications web et mobiles. J'aime transformer des idées en solutions pratiques, apprendre de nouvelles technologies et développer des projets répondant à des besoins réels.",
       projects: "Découvrir mes projets",
       cv: "Télécharger mon CV",
       contact: "Me contacter",
@@ -82,13 +82,13 @@ export const i18n = {
     about: {
       title: "Derrière le code, une envie de créer.",
       paragraphs: [
-        "Je me forme en Génie Logiciel à l'ESP Antsirabe, avec un intérêt pour le développement web, logiciel et mobile.",
-        "Mon stage au CISCO Antsirabe I, au service informatique, s'est traduit par une application de gestion des demandes de diplômes.",
+        "Je suis une formation en génie logiciel à l'ESP Antsirabe, avec un intérêt pour le développement web et mobile.",
+        "Mon stage au CISCO Antsirabe I, au service informatique, a abouti à la réalisation d'une application de gestion des demandes de diplômes.",
       ],
       facts: [
-        { k: "Formation", v: "Génie Logiciel, ESP Antsirabe" },
+        { k: "Formation", v: "Génie logiciel, ESP Antsirabe" },
         { k: "Stage", v: "CISCO Antsirabe I, service informatique" },
-        { k: "Domaines", v: "Web, mobile, logiciel" },
+        { k: "Domaines", v: "Web et mobile" },
       ],
       values: [
         {
@@ -127,14 +127,14 @@ export const i18n = {
         agria: {
           title: "AgrIA",
           summary:
-            "Application mobile d'aide au diagnostic des maladies des plantes à partir de photos, avec conseils de traitement.",
+            "Application mobile d'aide au diagnostic des maladies des plantes à partir de photos, avec des conseils de traitement.",
           description:
             "AgrIA est une application mobile qui aide à diagnostiquer les maladies des plantes à partir d'une simple photo. L'interface est développée avec Flutter et Dart. Les images sont analysées par un modèle de reconnaissance d'images CNN basé sur ResNet50, exposé par une API FastAPI en Python, puis l'application affiche le diagnostic avec des conseils de traitement. Les données sont stockées dans MongoDB.",
         },
         diplomes: {
           title: "Gestion des demandes de diplômes",
           summary:
-            "Application de bureau de gestion des demandes de diplômes BEPC et CEPE.",
+            "Application de bureau pour gérer les demandes de diplômes BEPC et CEPE.",
           description:
             "Application de bureau qui permet de gérer les demandes de diplômes BEPC et CEPE. Elle est développée en Java, avec une interface Java Swing créée sous NetBeans, et conserve les demandes dans une base de données MySQL. Ce projet a été réalisé pendant mon stage au service informatique du CISCO Antsirabe I.",
         },
@@ -178,7 +178,7 @@ export const i18n = {
   },
 
   en: {
-    meta: { title: "Aina Natolotra, web and software developer" },
+    meta: { title: "Aina Natolotra, web and mobile developer" },
     skip: "Skip to content",
     nav: [
       { id: "accueil", label: "Home" },
@@ -190,9 +190,9 @@ export const i18n = {
     theme: { toDark: "Switch to dark mode", toLight: "Switch to light mode" },
     hero: {
       status: "Open to opportunities",
-      role: "Web & software developer",
+      role: "Web & mobile developer",
       intro:
-        "I'm a Software Engineering student at ESP Antsirabe, interested in designing web, mobile and software applications. I like turning ideas into practical solutions, learning new technologies and building projects that answer real needs.",
+        "I'm a software engineering student at ESP Antsirabe, interested in designing web and mobile applications. I like turning ideas into practical solutions, learning new technologies and building projects that answer real needs.",
       projects: "Explore my projects",
       cv: "Download my CV",
       contact: "Get in touch",
@@ -200,24 +200,24 @@ export const i18n = {
     about: {
       title: "Behind the code, a drive to create.",
       paragraphs: [
-        "I'm studying Software Engineering at ESP Antsirabe, with an interest in web, software and mobile development.",
-        "My internship at CISCO Antsirabe I, in the IT department, resulted in an application to manage diploma requests.",
+        "I'm studying software engineering at ESP Antsirabe, with an interest in web and mobile development.",
+        "My internship at CISCO Antsirabe I, in the IT department, led to the development of an application to manage diploma requests.",
       ],
       facts: [
-        { k: "Education", v: "Software Engineering, ESP Antsirabe" },
+        { k: "Education", v: "Software engineering, ESP Antsirabe" },
         { k: "Internship", v: "CISCO Antsirabe I, IT department" },
-        { k: "Fields", v: "Web, mobile, software" },
+        { k: "Fields", v: "Web and mobile" },
       ],
       values: [
         {
           icon: "trending",
           title: "Continuous learning",
-          text: "I aim to grow with every project and to discover new technologies.",
+          text: "I aim to improve with every project and to discover new technologies.",
         },
         {
           icon: "target",
           title: "Problem solving",
-          text: "I analyse the need before designing a fitting solution.",
+          text: "I analyze the need before designing a fitting solution.",
         },
         {
           icon: "users",
@@ -247,14 +247,14 @@ export const i18n = {
           summary:
             "Mobile app that helps diagnose plant diseases from photos, with treatment advice.",
           description:
-            "AgrIA is a mobile app that helps diagnose plant diseases from a simple photo. The interface is built with Flutter and Dart. Images are analysed by a CNN image-recognition model based on ResNet50, served by a FastAPI API in Python, and the app then shows the diagnosis with treatment advice. Data is stored in MongoDB.",
+            "AgrIA is a mobile app that helps diagnose plant diseases from a simple photo. The interface is built with Flutter and Dart. Images are analyzed by a CNN image-recognition model based on ResNet50, served by a FastAPI API in Python, and the app then shows the diagnosis with treatment advice. Data is stored in MongoDB.",
         },
         diplomes: {
           title: "Diploma request management",
           summary:
-            "Desktop application to manage BEPC and CEPE diploma requests for CISCO Antsirabe I.",
+            "Desktop application to manage BEPC and CEPE diploma requests.",
           description:
-            "A desktop application to manage BEPC and CEPE diploma requests for CISCO Antsirabe I. It is built in Java with a Java Swing interface created in NetBeans, and keeps the requests in a MySQL database. This project was carried out during my internship in the IT department of CISCO Antsirabe I.",
+            "A desktop application to manage BEPC and CEPE diploma requests. It is built in Java with a Java Swing interface created in NetBeans, and keeps the requests in a MySQL database. This project was carried out during my internship in the IT department of CISCO Antsirabe I.",
         },
         facturation: {
           title: "Invoicing application",

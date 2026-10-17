@@ -8,7 +8,6 @@ function initialLang() {
     const saved = localStorage.getItem("lang");
     if (saved === "fr" || saved === "en") return saved;
   } catch {
-    // stockage indisponible : on se fie à la langue du navigateur
   }
   return (navigator.language || "fr").toLowerCase().startsWith("en") ? "en" : "fr";
 }
@@ -22,7 +21,6 @@ export function LangProvider({ children }) {
     try {
       localStorage.setItem("lang", lang);
     } catch {
-      // ignoré
     }
   }, [lang]);
 

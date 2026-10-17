@@ -144,7 +144,6 @@ export function Footer() {
         <div className="footer-end">
           <LangSwitch />
           <ThemeToggle />
-          <small>© {new Date().getFullYear()}</small>
         </div>
       </div>
     </footer>
