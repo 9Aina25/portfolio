@@ -7,7 +7,6 @@ import Hero from "./components/Hero.jsx";
 import { About } from "./components/Sections.jsx";
 import { Projects } from "./components/Projects.jsx";
 import { Contact, Footer } from "./components/Contact.jsx";
-import Assistant from "./components/Assistant.jsx";
 
 const PAGES = { accueil: Hero, apropos: About, projets: Projects, contact: Contact };
 
@@ -52,7 +51,6 @@ function Site() {
         </AnimatePresence>
       </main>
       <Footer />
-      <Assistant />
     </div>
   );
 }

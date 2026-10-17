@@ -136,11 +136,11 @@ export function Footer() {
           <span className="footer-tag">{t.footer.tagline}</span>
         </p>
         <nav className="footer-links" aria-label={t.footer.links}>
-          <a href="#projets">{t.nav[3].label}</a>
-          <a href="#contact">{t.nav[6].label}</a>
-          {ext(links.linkedin, "LinkedIn")}
-          {ext(links.github, "GitHub")}
-        </nav>
+  <a href="#projets">{t.nav.find((n) => n.id === "projets")?.label}</a>
+  <a href="#contact">{t.nav.find((n) => n.id === "contact")?.label}</a>
+  {ext(links.linkedin, "LinkedIn")}
+  {ext(links.github, "GitHub")}
+</nav>
         <div className="footer-end">
           <LangSwitch />
           <ThemeToggle />
