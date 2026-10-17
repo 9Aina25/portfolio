@@ -1,5 +1,5 @@
 import { useLang } from "../lang.jsx";
-import { person, links, featured } from "../content.js";
+import { person, links } from "../content.js";
 import { Rise } from "./ui.jsx";
 import Icon from "./Icon.jsx";
 
@@ -19,16 +19,12 @@ export default function Hero() {
         <p className="hero-role">{t.hero.role}</p>
         <p className="hero-intro">{t.hero.intro}</p>
         <div className="hero-actions">
-          <a className="btn btn-primary" href="#projets">
-            {t.hero.projects}
-          </a>
+          <a className="btn btn-primary" href="#projets">{t.hero.projects}</a>
           <a className="btn btn-outline" href={links.cv} download>
             <Icon name="download" size={18} />
             {t.hero.cv}
           </a>
-          <a className="btn btn-text" href="#contact">
-            {t.hero.contact}
-          </a>
+          <a className="btn btn-text" href="#contact">{t.hero.contact}</a>
         </div>
       </div>
 
@@ -48,11 +44,6 @@ export default function Hero() {
             </div>
           ))}
         </dl>
-        <ul className="chips">
-          {featured.map((s) => (
-            <li key={s}>{s}</li>
-          ))}
-        </ul>
       </aside>
     </section>
   );
